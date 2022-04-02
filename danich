@@ -1,0 +1,11 @@
+rustflags = [
+  "-Aclippy::all",
+  "-Dclippy::correctness",
+  "-Dclippy::complexity",
+  "-Dclippy::unwrap_used",
+  "-Aclippy::if-same-then-else",
+  "-Aclippy::clone-double-ref",
+  "-Dclippy::complexity",
+  "-Aclippy::clone_on_copy",             # Too common
+  "-Aclippy::needless_lifetimes",        # Backward compat?
+  "-Aclippy::zero-prefixed-literal",     # 00_1000_000
